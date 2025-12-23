@@ -5,7 +5,7 @@ export default function Footer() {
     return (
     <>
         <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
-            <Image src="/logo-black.svg" alt="UniShare Logo" width={120} height={40} />
+            <Image src="/logo.svg" alt="UniShare Logo" width={120} height={40} />
   <nav className="grid grid-flow-col gap-4">
     <a className="link link-hover">About us</a>
     <a className="link link-hover">Contact</a>
