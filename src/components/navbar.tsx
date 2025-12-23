@@ -1,12 +1,13 @@
-
+'use client';
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
     <>
     
     <div className="navbar sticky top-0 bg-[#FCF8F1] bg-opacity-30">
-  <div className="navbar-start">
+  <div className="navbar-start pl-20">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
@@ -14,39 +15,27 @@ export default function Navbar() {
       <ul
         tabIndex={-1}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
-      </ul>
+        <li><Link href="/">Home</Link></li>
+        <li><Link href="/resources">Resources</Link></li>
+        <li><Link href="/about">About</Link></li>
+        <li><Link href="/contact">Contact</Link></li>
+        </ul>
     </div>
-    <a href="/">
+    <Link href="/">
       <Image src="/logo.svg" alt="UniShare Logo" width={120} height={40} />
-    </a>
+    </Link>
 
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
-      <li>
-        <details>
-          <summary>Parent</summary>
-          <ul className="p-2 bg-base-100 w-40 z-1">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </details>
-      </li>
-      <li><a>Item 3</a></li>
+      <li><Link href="/">Home</Link></li>
+      <li><Link href="/resources">Resources</Link></li>
+      <li><Link href="/about">About</Link></li>
+      <li><Link href="/contact">Contact</Link></li>
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn px-5 bg-black text-white rounded-md">Log in</a>
+  <div className="navbar-end pr-20">
+    <Link href="/login" className="btn px-5 bg-black text-white rounded-xl">Log in</Link>
   </div>
 </div>
 </>
