@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Footer() {
@@ -7,10 +8,10 @@ export default function Footer() {
       <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
         <Image src="/logo-black.svg" alt="UniShare Logo" width={120} height={40} />
         <nav className="grid grid-flow-col gap-4">
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
+          <Link href="/">Home</Link>
+          <Link href="/resources">Resources</Link>
+          <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
         </nav>
         <nav>
           <div className="grid grid-flow-col gap-4">
