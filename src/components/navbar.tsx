@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <>
     
-    <div className="navbar sticky top-0 bg-[#FCF8F1] bg-opacity-30">
+    <div className="navbar sticky top-0 bg-[#FCF8F2] bg-opacity-30">
   <div className="navbar-start pl-20">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -27,7 +27,7 @@ export default function Navbar() {
 
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="menu menu-horizontal px-1 text-black">
       <li><Link href="/">Home</Link></li>
       <li><Link href="/resources">Resources</Link></li>
       <li><Link href="/about">About</Link></li>
