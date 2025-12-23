@@ -3,7 +3,9 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <div className="navbar shadow-sm bg-[#FCF8F1] bg-opacity-30">
+    <>
+    
+    <div className="navbar sticky top-0 bg-[#FCF8F1] bg-opacity-30">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -44,8 +46,9 @@ export default function Navbar() {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <a className="btn px-5 bg-black text-white rounded-md">Log in</a>
   </div>
 </div>
+</>
   );
 }
