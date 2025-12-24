@@ -4,7 +4,7 @@ export default function CTA() {
     return (
         <>
         {/* CTA Section */}
-        <div className="mt-16 text-center">
+        <div className="my-16 text-center">
           <div className="inline-block bg-linear-to-r from-blue-500 to-indigo-600 rounded-xl p-8 text-white w-3xl lg:w-7xl">
             <h3 className="text-2xl font-bold mb-3">Ready to join the community?</h3>
             <p className="text-blue-100 mb-6">

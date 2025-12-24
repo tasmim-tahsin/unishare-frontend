@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <>
     
-    <div className="navbar sticky top-0 bg-[#FCF8F2] bg-opacity-30 z-50">
+    <div className="navbar sticky top-0 bg-[#FCF8F2] bg-opacity-30 z-50 shadow-sm">
   <div className="navbar-start pl-20">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -35,7 +35,7 @@ export default function Navbar() {
     </ul>
   </div>
   <div className="navbar-end pr-20">
-    <Link href="/login" className="btn px-5 bg-black text-white rounded-xl">Log in</Link>
+    <Link href="/login" className="btn px-6 py-4 bg-black text-white rounded-full">Log in</Link>
   </div>
 </div>
 </>

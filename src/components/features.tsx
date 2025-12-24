@@ -69,7 +69,7 @@ const KeyFeatures = () => {
   ];
 
   return (
-    <div className="py-12 px-4 md:px-8 bg-white">
+    <div className="py-12 px-4 md:px-8 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -82,11 +82,11 @@ const KeyFeatures = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group border border-gray-200 rounded-xl p-6 hover:border-blue-300 hover:shadow-lg transition-all duration-300 bg-white"
+              className="group border border-gray-200 rounded-xl p-6 hover:border-blue-300 hover:shadow-lg transition-all duration-300 bg-blue-50/50"
             >
               {/* Icon */}
               <div className="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">

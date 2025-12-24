@@ -1,10 +1,12 @@
 "use client";
 
 import KeyFeatures from "@/components/features";
+import OurTeam from "@/components/ourteam";
 
 export default function AboutPage() {
     return (
         <>
+        <OurTeam />
             <div className="min-h-screen bg-[#FCF8F1] flex items-center justify-center px-4 z-0">
 
                 <div className="w-full max-w-2xl rounded-2xl bg-black/40 backdrop-blur-xl shadow-xl p-8 text-white">
