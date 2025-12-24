@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function LoginPage() {
   return (
-    <div className="min-h-screen bg-[#FCF8F1] flex items-center justify-center px-4 z-0">
+    <div className="min-h-screen bg-base-200 flex items-center justify-center px-4 z-0">
       
       <div className="w-full max-w-md rounded-2xl bg-black/40 backdrop-blur-xl shadow-xl p-8">
         
@@ -32,7 +32,7 @@ export default function LoginPage() {
               Remember me
             </label>
 
-            <Link href="/forgot-password" className="underline hover:text-white">
+            <Link href="/forgotpassword" className="underline hover:text-white">
               Forgot password?
             </Link>
           </div>
