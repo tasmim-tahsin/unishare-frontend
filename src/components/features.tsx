@@ -1,4 +1,5 @@
 // KeyFeatures.jsx
+import Link from 'next/link';
 import React from 'react';
 
 const KeyFeatures = () => {
@@ -72,10 +73,6 @@ const KeyFeatures = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center p-3 bg-l
-          inear-to-r from-blue-50 to-indigo-50 rounded-full mb-4">
-            <span className="text-3xl">🚀</span>
-          </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Key Features
           </h2>
@@ -117,19 +114,6 @@ const KeyFeatures = () => {
               </ul>
             </div>
           ))}
-        </div>
-
-        {/* CTA Section */}
-        <div className="mt-16 text-center">
-          <div className="inline-block bg-linear-to-r from-blue-500 to-indigo-600 rounded-xl p-8 text-white max-w-2xl">
-            <h3 className="text-2xl font-bold mb-3">Ready to get started?</h3>
-            <p className="text-blue-100 mb-6">
-              Join thousands of students and educators already sharing resources
-            </p>
-            <button className="bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors duration-300">
-              Explore Features →
-            </button>
-          </div>
         </div>
       </div>
     </div>
